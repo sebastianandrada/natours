@@ -1,0 +1,9 @@
+@mixin clearfix {
+  //Proposito: appendear un pseudo-elemento despues del elemento el 
+  // cual limpiara todos esos float
+  &::after {
+    content: "";
+    display: table;
+    clear: both; 
+  }
+}
